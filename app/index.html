@@ -4,33 +4,79 @@
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+  <title>The Workday Release | Official Website</title>
+  <meta name="description" content="The Workday Release is a solo pop / alternative project created by David Ottestad. Considering the complexity of his last name, Ottestad (pronounced 'aw-test-add') decided to write and release music under the band name The Workday Release.">
+  <meta name="keywords" content="workday release, alternative, music, david ottestad">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
-
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+  <header>
+    <div class="slider">
+      <img src="img/1white.jpg" />
+      <!-- <a href="https://itunes.apple.com/us/album/simple-distance/id561505003" target="_blank"><img src="img/2.jpg" /></a>
+      <img src="img/3.jpg" /> -->
+    </div>
+    <div id="social">
+      <a href="https://www.youtube.com/user/theworkdayrelease" target="_blank"><img src="img/youtube1.png" class="icon" id="youtubebutton"></a>
+      <a href="https://twitter.com/workdayrelease" target="_blank"><img src="img/twitter1.png" class="icon" id="twitterbutton"></a>
+      <a href="https://www.facebook.com/theworkdayrelease" target="_blank"><img src="img/facebook1.png" class="icon" id="facebookbutton"></a>
+      <a href="http://instagram.com/theworkdayrelease" target="_blank"><img src="img/instagram1.png" class="icon" id="instagrambutton"></a>
+      <a href="http://theworkdayrelease.tumblr.com/" target="_blank"><img src="img/tumblr1.png" class="icon" id="tumblrbutton"></a>
+      <a href="https://itunes.apple.com/us/artist/the-workday-release/id310294970" target="_blank"><img src="img/apple1.png" class="icon" id="itunesbutton"></a>
+    </div>
+  </header>
+  <div id="wrapper">
+    <nav class="navbar">
+      <ul>
+        <a href="#home"><li class="menu active">HOME</li></a>
+        <a href="http://theworkdayrelease.tumblr.com/" target="_blank"><li class="menu">BLOG</li></a>
+        <a href="#tour"><li class="menu">TOUR</li></a>
+        <a href="#media"><li class="menu">MEDIA</li></a>
+        <a href="http://theworkdayrelease.bigcartel.com/" target="_blank"><li class="menu">STORE</li></a>
+        <a href="#about"><li class="menu">ABOUT</li></a>
+        <a href="#contact"><li class="menu">CONTACT</li></a>
+      </ul>
+    </nav>
+    <div ng-view></div>
+  </div>
+  <div id="break"></div>
+  <footer>
+    <div id="footer_wrapper">
+      <div class="footer_column">
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup">
+        <form action="//theworkdayrelease.us2.list-manage.com/subscribe/post?u=4328b30b2386482cda9e88f16&amp;id=f429a52a0b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <label for="mce-EMAIL">Subscribe for news and updates.</label>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_4328b30b2386482cda9e88f16_f429a52a0b" tabindex="-1" value=""></div>
+              <div class="clear sign_up"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <div id="footer_social">
+          <a href="https://www.youtube.com/user/theworkdayrelease" target="_blank"><img src="img/youtube1.png" class="icon" id="youtubebutton"></a>
+          <a href="https://twitter.com/workdayrelease" target="_blank"><img src="img/twitter1.png" class="icon" id="twitterbutton"></a>
+          <a href="https://www.facebook.com/theworkdayrelease" target="_blank"><img src="img/facebook1.png" class="icon" id="facebookbutton"></a>
+          <a href="http://instagram.com/theworkdayrelease" target="_blank"><img src="img/instagram1.png" class="icon" id="instagrambutton"></a>
+          <a href="http://theworkdayrelease.tumblr.com/" target="_blank"><img src="img/tumblr1.png" class="icon" id="tumblrbutton"></a>
+          <a href="https://itunes.apple.com/us/artist/the-workday-release/id310294970" target="_blank"><img src="img/apple1.png" class="icon" id="itunesbutton"></a>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>&copy; The Workday Release. All Rights Reserved.</p>
+        <p>Website created by <a href="http://timbits07.github.io" target="_blank">Tim Storey</a></p>
+      </div>
+    </div>
+  </footer>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
