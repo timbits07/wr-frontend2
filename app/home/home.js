@@ -3,11 +3,11 @@
 angular.module('twrApp.home', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {
+  $routeProvider
   .when('/', {
     templateUrl: 'home/home.html',
     controller: 'siteCtrl'
-  });
+  })
   .when('/home', {
     templateUrl: 'home/home.html',
     controller: 'homeCtrl'
